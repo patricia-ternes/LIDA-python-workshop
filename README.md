@@ -17,6 +17,11 @@
     <h2 align="center">Leeds Institute for Data Analytics (LIDA)</h2>
 </p>
 
+## Disclaimer
+
+> This repository is under construction. 
+> The workshop will be held at the end of September 2021.
+
 ## Authors
 
 * Dr Josie McCulloch
