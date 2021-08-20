@@ -17,3 +17,12 @@
     <h2 align="center">Leeds Institute for Data Analytics (LIDA)</h2>
 </p>
 
+## Authors
+
+* Dr Josie McCulloch
+  * Research Fellow, School of Geography, University of Leeds, UK
+  * [More information](https://environment.leeds.ac.uk/geography/staff/9706/dr-josie-mcculloch)
+* Dr Patricia Ternes
+  * Research Fellow, School of Geography, University of Leeds, UK
+  * [More information](https://patricia-ternes.github.io/)
+
