@@ -8,5 +8,12 @@
         <img src="https://img.shields.io/badge/-🌐LIDA-black.svg?style=for-the-badge&logo=🌐&colorB=555&logoColor=99F4FB" /></a>
 </p>
 
-# LIDA-python-workshop
-Notebooks and Files for Python Workshop (LIDA - Data Scientist Internship Programme)
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+    <img src="inputs/icons/python-file-symbol.svg" alt="Logo" width="15% id="logo">
+    <p  align="center" style="font-size:0.75em;">Icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+    <h1 align="center">Python Workshop</h1>
+    <h2 align="center">Leeds Institute for Data Analytics (LIDA)</h2>
+</p>
+
