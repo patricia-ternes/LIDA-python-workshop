@@ -26,7 +26,7 @@
   * Research Fellow, School of Geography, University of Leeds, UK
   * [More information](https://patricia-ternes.github.io/)
 
-## General information
+## About
 Notebooks and Files for Python Workshop (LIDA - Data Scientist Internship Programme)
 
 ## Table of Contents
