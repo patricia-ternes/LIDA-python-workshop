@@ -20,7 +20,7 @@
 ## Disclaimer
 
 > This repository is under construction. 
-> The workshop will be held at the end of September 2021.
+> The workshop will be held at October 2021.
 
 ## Authors
 
@@ -35,5 +35,7 @@
 Notebooks and Files for Python Workshop (LIDA - Data Scientist Internship Programme)
 
 ## Table of Contents
-1. [Topic 1](#)
-1. [Topic 2](#)
+1. [Machine Learning overview](#1-machine_learning)
+1. [Working with geospatial data](#2-geospatial_data)
+1. [Tips to speed up python codes](#3-speed_up)
+1. [Getting data from APIs](#4-api)
