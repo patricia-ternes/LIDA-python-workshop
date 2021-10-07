@@ -23,17 +23,17 @@
 
 ---
 
-### General tips
+## General tips
 
 Before moving on to more advanced techniques, it is necessary to ensure that the code is written in the best possible way. Below, some practices considered ideal will be presented.
 
-#### Python version
+### Python version
 
 > Every release is more optimized.
 
 The latest version should have the best performance, so make sure you always use the latest version. At least choose Python 3 over Python 2.
 
-#### Data structure
+### Data structure
 
 > Using the most appropriate data structure is critical to speed up the code.
 
@@ -41,7 +41,7 @@ Python has some built-in data structures (namely: list, tuple, set, and dictiona
 
 One of the most common mistakes is using the **list** structure for all cases. For example, if your list has elements of a single type (like real numbers), you might consider using a NumPy array to optimise the code.
 
-#### Assign variables
+### Assign variables
 
 > Avoid assign variables inside loops.
 
@@ -63,7 +63,7 @@ y = 2
 z = 3
 ```
 
-#### Library function and dot operation
+### Library function and dot operation
 
 > Library functions are designed to be as efficient as possible.
 
@@ -89,7 +89,7 @@ that is more efficient than the code with a homemade function:
 x = 4 ** 0.5
 ```
 
-#### List comprehension
+### List comprehension
 
 > List comprehension is a very concise syntax to create a new list
 
@@ -116,7 +116,7 @@ for a list comprehension:
 x = [i for i in range(100) if i%2 == 0]
 ```
 
-#### If-else ladder
+### If-else ladder
 
 > Put high probability if-statements first!
 
