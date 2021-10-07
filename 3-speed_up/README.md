@@ -7,10 +7,10 @@
     <h2 align="center">Python Workshop - Leeds Institute for Data Analytics (LIDA)</h2>
 </p>
 
-## Disclaimer
+The workshop has two additional materials:
 
-> This repository is under construction. 
-> The workshop will be held at October 2021.
+1. [Presentation](https://patricia-ternes.github.io/Documents/Teaching/Trainings/02-LIDA_Python/presentation_speed-up.html)
+1. [Jupyter notebook](speed-up.ipynb)
 
 ## General solution
 
