@@ -323,3 +323,51 @@ For the `pyscript.py` file the output visualization is:
 This method is very useful to avoid reaching memory limits.
 
 ---
+
+## Native-speed code
+
+Python is an interpreted code which is one of the main causes of Python's performance not being as good as code written in C (which is compiled), for example. This is also one of the reasons library functions perform better than homemade functions, since normally library functions are C-based. A natural way then is to turn the Python code into a compiled code. For that there are some options, and here we will present [Numba](http://numba.pydata.org/).
+
+Numba compiles parts of a Python code using a process named Just In Time compilation (jit). This process is simple and fast.
+
+To use the `numba` module it is necessary to follow the steps:
+
+1. import the numba jit decorator
+2. add a `@jit` decorator before every function that you want to compile
+3. command prompt: normally run the Python file
+
+For the `pyscript.py` code, following the step 1 and 2, the updated code is (see first and third line):
+
+```python
+from numba import jit
+
+@jit
+def primes(n):
+    if n==2:
+        return [2]
+    elif n<2:
+        return []
+
+    s=[i for i in range(3,n+1,2)]  # I updated this line to avoid an error of undefined list type
+    mroot = n ** 0.5
+    half=(n+1)//2-1
+    i=0
+    m=3
+
+    while m <= mroot:
+        if s[i]:
+            j=(m*m-3)//2
+            s[j]=0
+            while j<half:
+                s[j]=0
+                j+=m
+        i=i+1
+        m=2*i+3
+    return [2]+[x for x in s if x]
+
+primes(100)
+```
+
+You can improve even more the jit compilation by adding some `Compilation Options` (see [numba documentation](https://numba.readthedocs.io/en/stable/user/jit.html)).
+
+---
