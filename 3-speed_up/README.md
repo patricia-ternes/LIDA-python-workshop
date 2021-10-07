@@ -21,8 +21,6 @@
 3. It is possible to translate the Python function to an optimized code (see [Native-speed code](#native-speed-code) session).
 4. Finally, it is possible to separate the running process in several processes to be run in parallel (see [Parallel running](#parallel-running)).
 
----
-
 ## General tips
 
 Before moving on to more advanced techniques, it is necessary to ensure that the code is written in the best possible way. Below, some practices considered ideal will be presented.
@@ -121,8 +119,6 @@ x = [i for i in range(100) if i%2 == 0]
 > Put high probability if-statements first!
 
 Putting low probability if-statements early will make your code perform more operations than necessary.
-
----
 
 ## CPU profiling
 
@@ -249,8 +245,6 @@ k = np.arange(j, half, m)
 s[k] = 0
 ```
 
----
-
 ## Memory profiling
 
 The memory profiling follows an approach similar to the one discussed above. To this task the `memory-profiler` module will be used (see [here](https://pypi.org/project/memory-profiler/) more information). It can be installed through command prompt typing either:
@@ -322,8 +316,6 @@ For the `pyscript.py` file the output visualization is:
 
 This method is very useful to avoid reaching memory limits.
 
----
-
 ## Native-speed code
 
 Python is an interpreted code which is one of the main causes of Python's performance not being as good as code written in C (which is compiled), for example. This is also one of the reasons library functions perform better than homemade functions, since normally library functions are C-based. A natural way then is to turn the Python code into a compiled code. For that there are some options, and here we will present [Numba](http://numba.pydata.org/).
@@ -369,8 +361,6 @@ primes(100)
 ```
 
 You can improve even more the jit compilation by adding some `Compilation Options` (see [numba documentation](https://numba.readthedocs.io/en/stable/user/jit.html)).
-
----
 
 ### Parallel running
 
