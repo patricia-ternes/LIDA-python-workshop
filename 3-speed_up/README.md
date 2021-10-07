@@ -250,3 +250,76 @@ s[k] = 0
 ```
 
 ---
+
+## Memory profiling
+
+The memory profiling follows an approach similar to the one discussed above. To this task the `memory-profiler` module will be used (see [here](https://pypi.org/project/memory-profiler/) more information). It can be installed through command prompt typing either:
+
+- `pip install memory_profiler`
+- `conda install memory_profiler` (for Anaconda Python)
+
+The `memory-profiler` module depends on the `psutil` module that can be installed through command prompt typing either:
+
+- `pip install psutil`
+- `conda install psutil` (for Anaconda Python)
+
+To use the `memory_profiler` module it is necessary to follow two steps:
+
+1. add a `@profile` decorator (similar to the `line_profiler` module)
+2. command prompt: `python -m memory_profiler file.py`
+
+For the `pyscript.py` file go to the command prompt and type:
+
+```bash
+python -m memory_profiler pyscript.py
+```
+
+The output will be:
+
+```bash
+Line #    Mem usage    Increment  Occurences   Line Contents
+============================================================
+     1   41.762 MiB   41.762 MiB           1   @profile
+     2                                         def primes(n):
+     3   41.762 MiB    0.000 MiB           1       if n==2:
+     4                                                 return [2]
+     5   41.762 MiB    0.000 MiB           1       elif n<2:
+     6                                                 return []
+     7                                         
+     8   41.762 MiB    0.000 MiB           1       s=list(range(3,n+1,2))
+     9   41.762 MiB    0.000 MiB           1       mroot = n ** 0.5
+    10   41.762 MiB    0.000 MiB           1       half=(n+1)//2-1
+    11   41.762 MiB    0.000 MiB           1       i=0
+    12   41.762 MiB    0.000 MiB           1       m=3
+    13                                         
+    14   41.762 MiB    0.000 MiB           5       while m <= mroot:
+    15   41.762 MiB    0.000 MiB           4           if s[i]:
+    16   41.762 MiB    0.000 MiB           3               j=(m*m-3)//2
+    17   41.762 MiB    0.000 MiB           3               s[j]=0
+    18   41.762 MiB    0.000 MiB          31               while j<half:
+    19   41.762 MiB    0.000 MiB          28                   s[j]=0
+    20   41.762 MiB    0.000 MiB          28                   j+=m
+    21   41.762 MiB    0.000 MiB           4           i=i+1
+    22   41.762 MiB    0.000 MiB           4           m=2*i+3
+    23   41.762 MiB    0.000 MiB          52       return [2]+[x for x in s if x]
+```
+
+The `memory-profiler` module also has a nice visualization tool that can be used by typing in the command prompt:
+
+```bash
+mprof run file.py
+```
+
+and then:
+
+```bash
+mprof plot
+```
+
+For the `pyscript.py` file the output visualization is:
+
+![memory-plot](Figure_1.png)
+
+This method is very useful to avoid reaching memory limits.
+
+---
