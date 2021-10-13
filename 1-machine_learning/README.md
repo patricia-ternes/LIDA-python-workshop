@@ -9,7 +9,7 @@
 
 The workshop has some additional materials:
 
-1. [Presentation](#)
+1. [Presentation](https://patricia-ternes.github.io/Documents/Teaching/Trainings/02-LIDA_Python/presentation_ML.html)
 2. [Linear Regression notebook](Linear_regression.ipynb)
 3. [Classification notebook](Classification.ipynb)
 4. [Hidden Markov notebook](Hidden_Markov.ipynb)
