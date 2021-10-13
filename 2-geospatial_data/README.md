@@ -7,7 +7,5 @@
     <h2 align="center">Python Workshop - Leeds Institute for Data Analytics (LIDA)</h2>
 </p>
 
-## Disclaimer
-
-> This repository is under construction. 
-> The workshop will be held at October 2021.
+> This note books contain excerpts from Geographic Data Science with Python
+> https://geographicdata.science/book/intro.html

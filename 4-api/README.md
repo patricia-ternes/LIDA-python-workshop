@@ -6,8 +6,3 @@
     <h1 align="center">Getting data from APIs</h1>
     <h2 align="center">Python Workshop - Leeds Institute for Data Analytics (LIDA)</h2>
 </p>
-
-## Disclaimer
-
-> This repository is under construction. 
-> The workshop will be held at October 2021.
